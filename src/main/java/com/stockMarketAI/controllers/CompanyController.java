@@ -13,7 +13,10 @@ import com.stockMarketAI.services.CompanyService;
 
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://company-stock-analysis-9h8v-nnfektu5f-rps-projects-f80b666c.vercel.app/"
+})
 @RestController
 @RequestMapping("/api/stockMarketAI/")
 public class CompanyController {
@@ -50,3 +53,4 @@ public class CompanyController {
 	
 
 }
+
